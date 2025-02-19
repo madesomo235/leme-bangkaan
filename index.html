@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punyah Care I Lempeng Beleg</title>
+    <style>
+        /* Animasi kedap-kedip */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Gaya judul */
+        .judul {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: red;
+            animation: blink 1s infinite;
+            padding: 10px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        /* CSS untuk layar penuh */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 50px; /* Mengatur jarak dari judul */
+            left: 0;
+            width: 100%;
+            height: calc(100% - 50px); /* Sisa layar setelah judul */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Judul dengan animasi blink -->
+    <div class="judul">Punyah Care I Lempeng Beleg</div>
+
+    <!-- Video Streamable layar penuh -->
+    <div class="video-container">
+        <iframe src="https://streamable.com/e/3c9ize" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
